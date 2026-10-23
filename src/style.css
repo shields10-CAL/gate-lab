@@ -1,0 +1,16 @@
+html,body,#root{margin:0;width:100%;height:100%;overflow:hidden}.palette-head{background:#e0e7dc;color:#2e422d;font-weight:800;font-size:14px;padding:11px 13px;border-top:1px solid #d2ddcf;border-bottom:1px solid #d2ddcf}.palette-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px;width:100%;max-width:100%;box-sizing:border-box;overflow:hidden}.palette-entry{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:92px;min-width:0;max-width:100%;overflow:hidden;border:1px solid transparent;border-radius:6px;cursor:grab;text-align:center;font-size:12px;color:#2e3731;user-select:none}.palette-entry:hover{border-color:#b8d8a8;background:#e7f1e1}.palette-entry span{margin-top:2px;max-width:100%;white-space:normal;overflow-wrap:anywhere}.palette-entry svg{max-width:100%;height:auto;overflow:visible}.ic-icon{display:grid;place-items:center;border:2px solid #2c362e;background:white;width:58px;height:43px;font-weight:700;font-size:12px;overflow:hidden}.workbench{height:100%;width:100%;touch-action:none;display:block;cursor:crosshair;user-select:none;-webkit-user-select:none}.workbench *{user-select:none;-webkit-user-select:none}.canvas-label{font-size:24px;font-weight:700;fill:#243025;pointer-events:none}.component-caption{font-size:18px;font-weight:700;fill:#354639;pointer-events:none}.ic-name{font-size:19px;font-weight:600;fill:#29302a;pointer-events:none}.pin-name{font-size:12px;font-weight:400;fill:#29302a;pointer-events:none}
+.wire-powered{stroke-dasharray:14 8;animation:flow-electric 1.5s linear infinite}@keyframes flow-electric{to{stroke-dashoffset:-44}}
+.help-table{width:100%;border-collapse:collapse;font:14px Arial,sans-serif}.help-table th,.help-table td{border-bottom:1px solid #dce6d9;padding:11px;text-align:left;vertical-align:top}.help-table th{width:38%;font-weight:700;color:#304330}
+
+.truth-table{border-collapse:collapse;width:100%;font-size:14px;text-align:center}.truth-table th,.truth-table td{border:1px solid #d5dfd4;padding:8px 14px;white-space:nowrap}.truth-table tbody tr:nth-child(even){background:#f4f7f3}.truth-table thead{position:sticky;top:0;z-index:1}
+
+/* Never allow a wide palette preview to make the entire sidebar scroll sideways. */
+.MuiDrawer-paper{overflow-x:hidden!important}
+.sidebar-palette{width:100%;max-width:100%;overflow-x:hidden!important;box-sizing:border-box}
+.sidebar-collapse-tab{position:fixed;top:50%;transform:translateY(-50%);width:25px;height:76px;z-index:1201;background:#6aa84f;color:white;border:1px solid #588e42;border-radius:0 10px 10px 0;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 7px #0002}
+.sidebar-collapse-tab:hover{background:#568d3f}
+
+/* Smooth sidebar slide and draggable orthogonal-wire handles. */
+.sidebar-collapse-tab{transition:left 240ms ease, background-color 160ms ease}
+.wire-bend-handle{cursor:grab;stroke:#38552f;stroke-width:2.2;fill:#fff;pointer-events:all}
+.wire-bend-handle:hover{fill:#e4f0df;stroke:#6aa84f}
