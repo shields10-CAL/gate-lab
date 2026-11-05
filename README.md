@@ -12,7 +12,7 @@ GateLab helps beginners investigate **Boolean logic**, the logic gates that impl
 
 The interface includes input switches and multi-bit inputs, logic gates, light bulbs and numeric outputs, connections that show signal states, truth tables, and a way to save and reuse circuits as **integrated circuits (ICs)**.
 
-![Two toggle switches connected to an AND gate and digital output](docs/images/gatelab-logic-gates.png)
+<img src="docs/images/gatelab-logic-gates.png" alt="GateLab component palette showing switches, binary inputs, outputs, and basic logic gates" width="300">
 
 ## How to install
 
@@ -68,7 +68,7 @@ Start by placing **two toggle switches**, an **AND gate**, and a **0/1 output** 
 
 Students can move beyond individual gates by building more complex circuits, labeling inputs and outputs, and saving a selection as a **custom integrated circuit**. Creating an IC turns a complete working circuit into a reusable component with named pins. This is GateLab's defining instructional feature: students can use something complex without having to rebuild—or see—all of its internal details.
 
-![Creating a reusable custom integrated circuit with named input and output pins](docs/images/gatelab-integrated-circuit.png)
+![A four-bit ripple-carry adder integrated circuit with labeled input and output pins](docs/images/gatelab-integrated-circuit.png)
 
 ### Teaching abstraction: toward a ripple-carry adder
 
